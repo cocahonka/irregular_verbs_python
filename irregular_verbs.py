@@ -48,7 +48,7 @@ def main():
             correctCount += 1;
         else:
             print(f'wrong, correct answer is {answers}, and pronunciation is {pronunciation}');
-            wrongAnswers.append(f'{answers} with pronunciation {pronunciation}');
+            wrongAnswers.append(f'{question} - {answers} with pronunciation {pronunciation}');
         
         # hold the input
         input()
