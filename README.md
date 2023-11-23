@@ -1,5 +1,13 @@
 # Повторялка неправильных глаголов по английскому
 
 1. Клонируйте репозиторий `git clone https://github.com/cocahonka/irregular_verbs_python.git`
-2. Запускайте [irregular_verbs.py](irregular_verbs.py)
-3. Учите
+2. В файле [config.ini](config.ini) вы можете настроить повторялку под себя:
+    > second_try - возможность второй попытки ввода (не засчитывается за ошибку)
+
+    > long_words - отключение слишком длинных слов (их всего 2)
+
+    > shuffle - перемешивание глаголов перед началом
+
+    > custom_bounds - возможность устанавливать количество глаголов
+3. Запускайте [irregular_verbs.py](irregular_verbs.py)
+4. Учите :)
