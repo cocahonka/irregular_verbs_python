@@ -32,6 +32,8 @@ def main():
     data: List[List[str]] = readData('eng.txt');
     shuffle(data);
     
+    wrongAnswers: List[str] = [];
+    
     totalQuestions: int = len(data);
     correctCount: int = 0;
     for index, row in enumerate(data):
@@ -46,6 +48,7 @@ def main():
             correctCount += 1;
         else:
             print(f'wrong, correct answer is {answers}, and pronunciation is {pronunciation}');
+            wrongAnswers.append(f'{answers} with pronunciation {pronunciation}');
         
         # hold the input
         input()
@@ -53,6 +56,8 @@ def main():
         cls()
       
     print(f'{correctCount} out of {totalQuestions} answered correctly');
+    print(f'the list of words you spelled incorrectly, below are the correct answers:');
+    print(*wrongAnswers, sep='\n');
          
 
 if __name__ == '__main__':
