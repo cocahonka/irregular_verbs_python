@@ -23,7 +23,7 @@ def readConfig(filePath: str) -> Tuple[bool, bool, bool, bool]:
     isCustomBoundsEnable: bool = config.getboolean('settings', 'custom_bounds');
     
 
-    return isSecondTryEnable, isLongWordsEnable, isShuffleEnable, isCustomBoundsEnable
+    return isSecondTryEnable, isLongWordsEnable, isShuffleEnable, isCustomBoundsEnable;
 
 
 def cls():
@@ -89,8 +89,8 @@ def main():
             wrongAnswers.append(f'{question} - {answers} with pronunciation {pronunciation}');
         
         
-        input()
-        cls()
+        input();
+        cls();
         
         index += 1;
         isSecondTryUsed = False;
